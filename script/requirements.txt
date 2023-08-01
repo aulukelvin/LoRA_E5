@@ -1,0 +1,11 @@
+peft
+accelerate
+transformers
+datasets
+evaluate
+hnswlib
+pandas
+tqdm
+huggingface_hub
+wandb
+pytest
