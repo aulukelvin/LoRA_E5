@@ -408,7 +408,8 @@ def main():
             active_dataloader = accelerator.skip_first_batches(train_dataloader, resume_step)
         else:
             active_dataloader = train_dataloader
-        print(active_da
+        //print(active_dataloader)
+        
         for step, batch in enumerate(active_dataloader):
             with accelerator.accumulate(model):
                 q1_embs = model(**{k.replace("question1_", ""): v for k, v in batch.items() if "question1_" in k})
